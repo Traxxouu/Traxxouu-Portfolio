@@ -1,0 +1,131 @@
+body{
+    background-color: #191a1a;
+}
+
+
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+}
+
+header h1{
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+nav.menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+nav.menu-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.menu-nav ul li.btn {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav.menu-nav ul li.btn a{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav.menu-nav ul li.btn:hover a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(114, 114, 114, 0.3);
+    transition: 0.3s all; 
+}
+
+nav.menu-nav ul li.btn{
+    display: inline-block;
+}
+
+
+
+
+
+iframe {
+    margin-bottom: 10px;
+    margin-top: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section img{
+    margin-top: -90px;
+    margin-bottom: -34%;
+    margin-left: 45%;
+
+}
+
+section h1{
+    color: white;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 60px;
+}
+
+
+
+
+
+
+footer{
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+
+footer a{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+
+footer a:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.3s all;
+
+}
+
+footer a{
+    color: white;
+}
