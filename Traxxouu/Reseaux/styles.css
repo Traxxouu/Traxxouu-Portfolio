@@ -1,0 +1,189 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#intro {
+    height: 100vh;
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#intro h1, #intro p {
+    font-size: 2.5rem;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#navbar {
+    display: none;
+}
+
+.navbar {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    color: #e0e0e0;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.cv-section {
+    margin-bottom: 3rem;
+}
+
+.cv-section .goto-center {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.highlight {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary, .btn-danger, .btn-warning, .btn-info, .btn-dark, .btn-outline-light, .btn-purple {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.efrei-link {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00fffb;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.efrei-link::after {
+    content: attr(data-efrei);
+    position: absolute;
+    font-weight: bold;
+    bottom: -1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e1e1e;
+    color: #00fffb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.efrei-link:hover::after {
+    opacity: 1;
+    transform: translateX(-5%) translateY(-40px);
+}
+
+.image-etudiant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    object-position: center;
+}
+
+.text-center img {
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    #intro h1 {
+        font-size: 4rem;
+    }
+
+    #intro p {
+        font-size: 2rem;
+    }
+}
+
+.twitter {
+    background: linear-gradient(to right, #00acee, #1da1f2);
+}
+
+.youtube {
+    background: linear-gradient(to right, #ff0000, #cc0000);
+}
+
+.instagram {
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.discord {
+    background: linear-gradient(to right, #7289da, #5865f2);
+}
+
+.github {
+    background: linear-gradient(to right, #333333, #6e5494);
+}
+
+.twitch {
+    background: linear-gradient(to right, #6441a5, #9147ff);
+}
+
+.btn-purple {
+    background-color: #9147ff;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #6441a5;
+}
+
+.gmail {
+    background: linear-gradient(to right, #ea4335, #ff7043);
+}
