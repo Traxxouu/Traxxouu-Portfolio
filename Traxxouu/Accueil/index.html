@@ -4,25 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Traxxouu</title>
+    <title>Portfolio Maël - Développeur Web</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Section d'introduction -->
-    <section id="intro" class="d-flex align-items-center justify-content-center text-center">
-        <div>
-            <h1 class="animate__animated animate__fadeInDown">Traxxouu</h1>
-            <p class="animate__animated animate__fadeInUp">Étudiant - DEV WEB</p>
-        </div>
-    </section>
-
     <!-- Barre de navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Traxxouu</a>
+            <a class="navbar-brand" href="#">Maël - Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,74 +24,115 @@
                         <a class="nav-link" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conceptions</a>
+                        <a class="nav-link" href="../blog/index.html">blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Réseaux</a>
+                        <a class="nav-link" href="../programme/index.html">Projet</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Stream</a>
+                        <a class="nav-link" href="../Reseaux/index.html">Réseaux</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contenu principal -->
-    <div class="container my-5">
-        <section id="presentation" class="cv-section my-5 animate__animated">
-            <h2 class="text-center mb-4">Présentation</h2>
-            <div class="card p-4 shadow-sm">
-                <p class="goto-center">
-                    <span class="highlight">Traxxouu</span>, <span class="highlight-exp">18 ans, étudiant en 1ère année dans le dev WEB</span> à <a href="https://www.efrei.fr/" class="efrei-link" target="_blank">EFREI.</a>
-                </p>
-                <div class="image-etudiant">
-                    <img src="media/logo-traxxouu-redim.png" alt="Étudiant" class="img-fluid mt-3" height="200" width="200">
-                </div>
-                
-            </div>
-        </section>
+    <!-- Section d'introduction -->
+    <section id="intro" class="d-flex align-items-center justify-content-center text-center">
+        <div>
+            <h1 class="animate__animated animate__fadeInDown">Maël</h1>
+            <p class="animate__animated animate__fadeInUp">Développeur Web & Application - Passionné de Technologie et d'Innovation</p>
+        </div>
+    </section>
 
+    <!-- Section Présentation améliorée -->
+    <section id="presentation" class="my-5 text-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 animate__animated animate__fadeInRight">
+                    <img src="media/logo-mael.jpg" alt="Photo de Maël" class="img-fluid rounded-circle mb-4" height="300" width="300">
+                </div>
+                <div class="col-lg-6 order-lg-1 animate__animated animate__fadeInLeft">
+                    <h2 class="mb-4">Salut ! Je suis Maël</h2>
+                    <p class="lead">Je suis un développeur web passionné, actuellement étudiant à l'EFREI. J'adore créer des projets dynamiques et innovants, tout en garantissant des solutions modernes, optimisées, et une expérience utilisateur fluide.</p>
+                    <div class="skills-highlight mt-4">
+                        <ul class="list-unstyled">
+                            <li><strong>Création de sites web sur mesure :</strong> HTML, CSS, JavaScript</li>
+                            <li><strong>Applications web interactives :</strong> Fonctionnalités dynamiques et réactives</li>
+                            <li><strong>Intégration d'authentification :</strong> Sécurité et gestion des utilisateurs</li>
+                            <li><strong>Optimisation UX/UI :</strong> Design centré sur l'utilisateur, conception responsive</li>
+                            <li><strong>Responsive Design :</strong> Adaptation pour une expérience mobile parfaite</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-primary mt-4">Travaillons ensemble</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <div class="container my-5">
         <section id="experience" class="cv-section my-5 animate__animated">
             <h2 class="text-center mb-4">Expérience</h2>
             <div class="card p-4 shadow-sm">
                 <ul>
-                    <li><span class="highlight">CNED</span> : <span class="highlight-exp">Étude de NSI (investissement personnel)</span></li>
-                    <li><span class="highlight">Autodidacte</span> : Apprentissage de <span class="highlight-exp">Python, création de site web / design de site web, gestion d’utilisateurs</span></li>
-                    <li><span class="highlight">Permis</span> de conduire catégorie <span class="highlight-exp">B</span></li>
-                    <li><span class="highlight">BNSSA</span> <span class="highlight-exp">en cours d'obtention (PSE1 obtenu)</span></li>
-                    <img src="media/image2.png" alt="expérience" class="img-fluid mt-3">
+                    <li><span class="highlight"><a href="https://www.efrei.fr/">EFREI Paris</a></span> : <span class="highlight-exp">Formation en Ingénierie Numérique et Informatique</span></li>
+                    <li>Création de sites web sur mesure (HTML, CSS, JavaScript)</li>
+                    <li>Développement d'applications web interactives</li>
+                    <li>Intégration de systèmes d'authentification et gestion d'utilisateurs</li>
+                    <li>Optimisation de l'expérience utilisateur (UX/UI)</li>
+                    <li>Adaptation de sites pour mobiles (Responsive Design)</li>
                 </ul>
+                <div class="badge-container mt-3">
+                    <a href="https://www.efrei.fr/"><img src="media/efreilogo.png" alt="Efrei Logo" class="badge-img"></a>
+                </div>
+
             </div>
         </section>
 
         <section id="competences" class="cv-section my-5 animate__animated">
-            <h2 class="text-center mb-4">Compétence</h2>
+            <h2 class="text-center mb-4">Compétences</h2>
             <div class="card p-4 shadow-sm">
-                <p class="goto-center">
-                    <span class="highlight-exp">Créativité / Design / HTML CSS JS / Python / PHP / MySQL / Conception {Figma; WIX; Blender...}</span>
-                </p>
-                <img src="media/image3.png" alt="Compétences" class="img-fluid mt-3">
+                <div class="skills-container">
+                    <ul>
+                        <li><strong>Langages :</strong> HTML, CSS, JavaScript, Python, PHP, MySQL, Swift, C#, Java</li>
+                        <li><strong>Frameworks et Bibliothèques :</strong> Bootstrap, React.js, Vue.js, Node.js</li>
+                        <li><strong>DevOps & Cloud :</strong> DevOps, Cloud Computing</li>
+                        <li><strong>QA & Review :</strong> Assurance Qualité, Revue de Code</li>
+                        <li><strong>Support & IT :</strong> Support Technique, Gestion IT</li>
+                        <li><strong>Outils de Conception :</strong> Figma, Blender, Git</li>
+                        <li><strong>Design et UX :</strong> Réalisation de maquettes, études UX/UI, responsive design</li>
+                    </ul>
+                </div>
+                <div class="badge-container mt-3">
+                    <img src="media/HTML5_logo.png" alt="HTML5 Logo" class="badge-img">
+                    <img src="media/CSS-Logo.png" alt="CSS Logo" class="badge-img-big">
+                    <img src="media/js-logo.png" alt="JavaScript Logo" class="badge-img">
+                    <img src="media/php_logo.png" alt="JavaScript Logo" class="badge-img">
+                    <img src="media/python_logo.png" alt="Python Logo" class="badge-img">
+                    <img src="media/mysql_logo.png" alt="MySQL Logo" class="badge-img">
+                    <img src="media/swift_logo.webp" alt="Swift Logo" class="badge-img">
+                    <img src="media/csharp_logo.png" alt="C# Logo" class="badge-img-big">
+                    <img src="media/java_logo.png" alt="Java Logo" class="badge-img-min">
+                    <img src="media/react_logo.webp" alt="React.js Logo" class="badge-img">
+                    <img src="media/vuejs_logo.png" alt="Vue.js Logo" class="badge-img">
+                    <img src="media/nodejs_logo.svg" alt="Node.js Logo" class="badge-img-big">
+                    <img src="media/devops_logo.svg" alt="DevOps Logo" class="badge-img-big">
+                    <img src="media/cloud_logo.png" alt="Cloud Computing Logo" class="badge-img-big">
+                    
+                </div>
             </div>
         </section>
 
-        <section id="interets" class="cv-section my-5 animate__animated">
-            <h2 class="text-center mb-4">Centre d'intérêt</h2>
+        <section id="contact" class="cv-section my-5 animate__animated">
+            <h2 class="text-center mb-4">Contactez-moi</h2>
             <div class="card p-4 shadow-sm">
-                <ul>
-                    <li><span class="highlight">Sport :</span>
-                        <ul>
-                            <li><span class="highlight-exp">Basket (5 ans de pratique)</span>🏀</li>
-                            <li><span class="highlight-exp">Judo (12 ans de pratique)</span>🥋</li>
-                            <li><span class="highlight-exp">Jiu-jitsu (8 ans de pratique)</span>🥋</li>
-                            <li><span class="highlight-exp">Piscine (10 ans de pratique)</span>🤿</li>
-                        </ul>
-                    </li>
-                    <li><span class="highlight">Théâtre</span></li>
-                    <li><span class="highlight">Jeux-Vidéos</span></li>
-                    <li><span class="highlight">Informatique</span></li>
-                    <img src="media/image4" alt="Centre-interet" class="img-fluid mt-3">
-                </ul>
+                <p class="text-center">Pour discuter de nouveaux projets ou collaborations, vous pouvez me contacter :</p>
+                <div class="buttons d-flex flex-column align-items-center">
+                    <a href="mailto:bmael4072@gmail.com" class="button mb-3">Envoyer un e-mail</a>
+                    <a href="https://www.linkedin.com/in/ma%C3%ABl-barbe-745566309/" target="_blank" class="button">LinkedIn</a>
+                   <a href="https://www.fiverr.com/s/NNpmRgZ" target="_blank" class="button" id="contact-green">Fiverr</a>
+                </div>
             </div>
         </section>
     </div>
@@ -107,15 +140,16 @@
     <!-- Footer -->
     <footer class="bg-dark text-center py-4">
         <nav class="mb-3">
-            <a href="#" class="mx-2 text-light">Accueil</a>
-            <a href="#" class="mx-2 text-light">Conceptions</a>
-            <a href="#" class="mx-2 text-light">Réseaux</a>
-            <a href="#" class="mx-2 text-light">Stream</a>
+            <a href="#intro" class="mx-2 text-light">Accueil</a>
+            <a href="#presentation" class="mx-2 text-light">Blog</a>
+            <a href="#experience" class="mx-2 text-light">Projet</a>
+            <a href="#competences" class="mx-2 text-light">Réseaux</a>
         </nav>
-        <p class="text-light">Traxxouu &copy; Tout droit réservé</p>
+        <p class="text-light">Maël Barbe &copy; Tous droits réservés</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 

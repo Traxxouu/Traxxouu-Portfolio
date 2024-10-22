@@ -1,0 +1,148 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Traxxouu - Réseaux Sociaux</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!-- Section d'introduction -->
+        <section id="intro" class="d-flex align-items-center justify-content-center text-center">
+            <div>
+                <h1 class="animate__animated animate__fadeInDown">Maël</h1>
+                <p class="animate__animated animate__fadeInUp">Mes réseaux</p>
+            </div>
+        </section>
+
+        <!-- Barre de navigation -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Maël</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../programme/index.html">Conceptions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Reseaux/index.html">Réseaux</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Stream/index.html">Stream</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenu principal -->
+        <div class="container my-5">
+            <section id="social-networks" class="cv-section my-5 animate__animated">
+                <h2 class="text-center mb-4">Réseaux Sociaux</h2>
+                <div class="row">
+
+                    <!-- Twitter -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card p-4 shadow-sm twitter">
+                            <h3 class="card-title">Twitter (X)</h3>
+                            <p class="card-text">Suivez-moi sur Twitter pour les dernières mises à jour.</p>
+                            <a href="https://x.com/traxxouu" target="_blank" class="btn btn-primary">Suivre</a>
+                        </div>
+                    </div>
+
+                    <!-- YouTube -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card p-4 shadow-sm youtube">
+                            <h3 class="card-title">YouTube</h3>
+                            <p class="card-text">Abonnez-vous à ma chaîne YouTube pour des vidéos.</p>
+                            <a href="https://www.youtube.com/channel/UCtHaLLiaFywBDC6dbCt1Ogg" target="_blank" class="btn btn-danger">S'abonner</a>
+                        </div>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card p-4 shadow-sm instagram">
+                            <h3 class="card-title">Instagram</h3>
+                            <p class="card-text">Suivez-moi sur Instagram pour des photos et stories.</p>
+                            <a href="https://www.instagram.com/maelrls/" target="_blank" class="btn btn-warning">Suivre</a>
+                        </div>
+                    </div>
+
+                    <!-- Gmail -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card p-4 shadow-sm gmail">
+                            <h3 class="card-title">Gmail</h3>
+                            <p class="card-text">Contactez-moi par mail pour toute question ou proposition.</p>
+                            <p class="btn btn-outline-light">bmael4072@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Discord -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card p-4 shadow-sm discord">
+                            <h3 class="card-title">Discord</h3>
+                            <p class="card-text">Rejoignez-moi sur Discord pour discuter.</p>
+                            <a href="https://discord.gg/FRWenvyYSB" target="_blank" class="btn btn-info">Traxxouu</a>
+                        </div>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card p-4 shadow-sm github">
+                            <h3 class="card-title">GitHub</h3>
+                            <p class="card-text">Explorez mes projets et contributions sur GitHub.</p>
+                            <a href="https://github.com/Traxxouu" target="_blank" class="btn btn-dark">Voir les projets</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Carte Twitch -->
+        <div class="container-fluid my-5">
+            <section id="twitch-stream" class="cv-section my-5 animate__animated">
+                <div class="card p-4 shadow-sm twitch">
+                    <h3 class="card-title text-center">Twitch</h3>
+                    <p class="card-text text-center">Regardez mes streams en direct sur Twitch.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                            src="https://player.twitch.tv/?channel=traxxouu&parent=traxxouu-portfolio.netlify.app"
+                            height="380"
+                            width="100%"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://www.twitch.tv/traxxouu" target="_blank" class="btn btn-purple">Suivre</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-center py-4">
+            <nav class="mb-3">
+                <a href="../index.html" class="mx-2 text-light">Accueil</a>
+                <a href="../programme/index.html" class="mx-2 text-light">Conceptions</a>
+                <a href="#" class="mx-2 text-light">Réseaux</a>
+                <a href="../Stream/index.html" class="mx-2 text-light">Stream</a>
+            </nav>
+            <p class="text-light">Traxxouu &copy; Tout droit réservé</p>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+    </html>
