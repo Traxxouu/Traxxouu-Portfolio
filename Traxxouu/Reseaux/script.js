@@ -1,29 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const intro = document.getElementById('intro');
-    const navbar = document.getElementById('navbar');
+    // Activer WOW.js pour les animations
+    new WOW().init();
 
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > intro.offsetHeight - navbar.offsetHeight) {
-            navbar.style.display = 'block';
-        } else {
-            navbar.style.display = 'none';
-        }
-    });
-
-    // Ajout des animations d'apparition
-    const sections = document.querySelectorAll('.cv-section');
-    const options = {
-        threshold: 0.2,
-    };
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-            entry.target.classList.add('animate__fadeInUp');
-            observer.unobserve(entry.target);
+    // Smooth scrolling pour les liens de navigation
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
-    }, options);
-
-    sections.forEach(section => {
-        observer.observe(section);
     });
 });
