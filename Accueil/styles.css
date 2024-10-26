@@ -265,6 +265,23 @@ footer a:hover {
     color: #ffffff;
 }
 
+#conteact-email{
+    background-color: #6610f2;
+}
+
+#conteact-email:hover{
+    background-color: #4304aa;
+}
+
+#contact-linkdIn{
+    background-color: #3f99f9;
+}
+
+#contact-linkdIn:hover{
+    background-color: #007bff;
+    transition: 200ms;
+}
+
 #contact-green{
     display: inline-block;
     padding: 0.75em 1.5em;

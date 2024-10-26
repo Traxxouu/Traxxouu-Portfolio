@@ -1,16 +1,11 @@
-/* CSS de base pour tous les appareils */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* CSS de base */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #121212;
   color: #cccccc;
-  font-size: 16px;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -20,45 +15,25 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.5em; /* 40px */
-  line-height: 1.2;
+  font-size: 2.5em;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 2em; /* 32px */
-  line-height: 1.3;
+  font-size: 2em;
   margin-bottom: 0.5em;
 }
 
 h3 {
-  font-size: 1.75em; /* 28px */
-  line-height: 1.3;
+  font-size: 1.75em;
   margin-bottom: 0.5em;
 }
 
 p {
-  font-size: 1em; /* 16px */
+  font-size: 1em;
   line-height: 1.8;
   color: #cccccc;
   margin-bottom: 1em;
-}
-
-.lead {
-  font-size: 1.125em; /* 18px */
-  line-height: 1.8;
-  color: #e0e0e0;
-}
-
-ul, ol {
-  margin-left: 1.5em;
-  margin-bottom: 1em;
-  color: #cccccc;
-}
-
-li {
-  margin-bottom: 0.5em;
-  line-height: 1.8;
 }
 
 a {
@@ -72,7 +47,7 @@ a:hover {
 }
 
 #intro {
-  height: 100vh;
+  height: 50vh;
   background: linear-gradient(to right, #007bff, #6610f2);
   color: white;
   display: flex;
@@ -84,7 +59,7 @@ a:hover {
   background: linear-gradient(to right, #007bff, #6610f2);
   padding: 1rem 1.5rem;
   font-size: 1rem;
-  position: fixed; /* La barre de navigation reste toujours visible en haut */
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
@@ -103,24 +78,13 @@ a:hover {
   position: relative;
 }
 
-.navbar-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: -5px;
-  background-color: #007bff;
-  transition: width 0.3s ease-in-out;
-}
-
 .navbar-nav .nav-link:hover {
   color: #f5f5f5;
   transform: translateY(-3px);
 }
 
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
+.navbar-nav .nav-link.active {
+  color: #ffffff;
 }
 
 .cv-section {
@@ -134,87 +98,46 @@ a:hover {
   color: #cccccc;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
-  padding: 2em;
-}
-
-.card h2 {
-  margin-bottom: 1em;
 }
 
 .card:hover {
   transform: scale(1.02) translateY(-5px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.badge-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
+.card-body {
+  padding: 1.5em;
 }
 
 .badge-img {
-  width: 80px;
+  width: 60px;
   height: auto;
-  margin: 10px;
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  margin-bottom: 1em;
   filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
 }
+
+
+
+
+
+#projet1{
+  height: 52%;
+  width: 52%;
+}
+
+#projet2{
+  height: 52%;
+  width: 52%;
+}
+
+
 
 .badge-img:hover {
-  transform: scale(1.1);
   filter: grayscale(0%);
 }
 
-
-.badge-img-big {
-  width: 135px;
-  height: auto;
-  margin: 10px;
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-  filter: grayscale(100%);
-}
-
-.badge-img-big:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-}
-
-
-
-
-
-
-
-
-.highlight {
-  font-weight: bold;
-  color: #007bff;
-}
-
-.highlight-exp {
-  color: #e0e0e0;
-}
-
-.image-etudiant {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -20px;
-  margin-bottom: -80px;
-  position: relative;
+.btn {
+  font-weight: 700;
 }
 
 footer {
@@ -233,60 +156,102 @@ footer a:hover {
   color: #f5f5f5;
 }
 
-.buttons .button {
-  display: inline-block;
-  padding: 0.75em 1.5em;
+/* Styles spécifiques aux réseaux sociaux */
+.linkedin {
+  background-color: #0e76a8;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.instagram {
+  background: linear-gradient(217deg, orange, rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(255, 140, 0, 0.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(255, 0, 0, 0.8), rgba(0,0,255,0) 70.71%),
+              linear-gradient(336deg, rgba(174, 0, 255, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
+.discord {
+  background: linear-gradient(217deg, #9fb4ff, #39487c);
+  height: 100%;
+}
+
+.discord img {
+  width: 120px;
+  height: 70px;
+}
+
+.github {
+  background-color: #333333;
+}
+
+.email {
+  background-color: #dd4b39;
+  height: 100%;
+}
+
+/* Styles des boutons */
+.btn-primary {
   background-color: #007bff;
-  color: #ffffff;
-  font-size: 1em;
-  font-weight: 700;
   border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
 }
 
-.buttons .button:hover {
+.btn-primary:hover {
   background-color: #0056b3;
-  color: #ffffff;
 }
 
-#contact-green{
-  display: inline-block;
-  padding: 0.75em 1.5em;
-  margin-top: 15px;
-  background-color: #1eaa4f;
-  color: #ffffff;
-  font-size: 1em;
-  font-weight: 700;
+.btn-warning {
+  background-color: #f09433;
   border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
+  color: #fff;
 }
 
-#contact-green:hover {
-  background-color: #00782e;
-  color: #ffffff;
+.btn-warning:hover {
+  background-color: #e6683c;
 }
 
+.btn-info {
+  background-color: #5865f2;
+  border: none;
+}
 
+.btn-info:hover {
+  background-color: #404eed;
+}
 
+.btn-dark {
+  background-color: #231f1f;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #555555;
+}
+
+.btn-outline-light {
+  border: 1px solid #cccccc;
+  color: #cccccc;
+}
+
+.btn-outline-light:hover {
+  background-color: #cccccc;
+  color: #121212;
+}
 
 @media (max-width: 768px) {
-  #intro h1 {
+  #intro {
+      height: 60vh;
+  }
+  h1 {
       font-size: 2rem;
   }
-
-  #intro p {
-      font-size: 1.25rem;
+  h2 {
+      font-size: 1.75rem;
   }
-
-  .button {
-      width: 100%;
-  }
-
-  .navbar-nav .nav-link {
-      margin-left: 0;
+  h3 {
+      font-size: 1.5rem;
   }
 }
+
+
