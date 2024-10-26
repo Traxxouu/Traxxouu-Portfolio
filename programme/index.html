@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Maël - projet</title>
+    <title>Maël - Projets</title>
+    <!-- Polices Google -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Votre CSS personnalisé -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,20 +20,21 @@
     <!-- Barre de navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">Maël</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Maël - Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="../Accueil/index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../blog/index.html">blog</a>
+                        <a class="nav-link" href="../blog/index.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projet</a>
+                        <a class="nav-link active" href="#">Projet</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Reseaux/index.html">Réseaux</a>
@@ -35,17 +42,57 @@
                 </ul>
             </div>
         </div>
-        </div>
     </nav>
 
     <!-- Section d'introduction -->
     <section id="intro" class="d-flex align-items-center justify-content-center text-center">
         <div>
-            <h1 class="animate__animated animate__fadeInDown">Site en Construction</h1>
-            <p class="animate__animated animate__fadeInUp">Cette page est actuellement en cours de développement.</p>
-            <a href="../Accueil/index.html" class="btn btn-primary mt-4 animate__animated animate__fadeInUp">Retour à l'accueil</a>
+            <h1 class="animate__animated animate__fadeInDown">Mes Projets</h1>
+            <p class="animate__animated animate__fadeInUp">Découvrez mes réalisations</p>
         </div>
     </section>
+
+    <!-- Contenu principal -->
+    <div class="container my-5">
+        <section id="projects" class="cv-section my-5 animate__animated">
+            <h2 class="text-center mb-4">Projets Récents</h2>
+            <div class="row">
+                <!-- Projet 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card">
+                        <img src="media/logo_spoticlock.ico" class="card-img-top" alt="Projet 1" id="projet1">
+                        <div class="card-body">
+                            <h5 class="card-title">SpotiClock</h5>
+                            <p class="card-text">Création d'une application python qui lance une playlist spotify choisie après une heure définie</p>
+                            <a href="https://github.com/Traxxouu/SpotifyAlarm" class="btn btn-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card">
+                        <img src="media/macotte1-3d.png" class="card-img-top" alt="Projet 2" id="projet2">
+                        <div class="card-body">
+                            <h5 class="card-title">Coche</h5>
+                            <p class="card-text">Développement d'une application web, pour gérer des listes et des tâches</p>
+                            <a href="http://www.test-todolist.rf.gd/" class="btn btn-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card project-card">
+                        <img src="media/carte_numerique.png" class="card-img-top" alt="Projet 3" id="projet3">
+                        <div class="card-body">
+                            <h5 class="card-title">Carte Numérique</h5>
+                            <p class="card-text">Développement d'une carte de contact numérique pour afficher mes informations</p>
+                            <a href="https://github.com/Traxxouu/Traxxouu-Carte" class="btn btn-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-center py-4">
@@ -55,10 +102,12 @@
             <a href="#" class="mx-2 text-light">Projet</a>
             <a href="../Reseaux/index.html" class="mx-2 text-light">Réseaux</a>
         </nav>
-        <p class="text-light">Maël &copy; Tout droit réservé</p>
+        <p class="text-light">Maël Barbe &copy; Tous droits réservés</p>
     </footer>
 
+    <!-- JS Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Votre JavaScript personnalisé -->
     <script src="script.js"></script>
 </body>
 
