@@ -56,6 +56,11 @@ $result = mysqli_query($conn, $query);
     <div class="container my-5">
         <?php if (isset($_SESSION['user_id'])): ?>
             <div class="d-flex justify-content-end">
+                <?php if ($_SESSION['role'] == 'admin'): ?>
+                    <a href="create.php" class="btn btn-success me-2">
+                        <i class="fas fa-plus"></i> Créer un Blog
+                    </a>
+                <?php endif; ?>
                 <a href="dashboard.php" class="btn btn-primary me-2">
                     <i class="fas fa-user"></i> Mon Compte
                 </a>
@@ -67,10 +72,14 @@ $result = mysqli_query($conn, $query);
                 <?php while($row = mysqli_fetch_assoc($result)): ?>
                     <div class="col-md-4">
                         <div class="blog-card card animate__animated animate__fadeInUp">
-                            <h2><?php echo $row['title']; ?></h2>
+                            <h2 class="blog-title"><?php echo $row['title']; ?></h2>
                             <img src="<?php echo $row['cover_image']; ?>" alt="Cover Image" class="img-fluid">
-                            <p><?php echo json_encode($row['tags']); ?></p>
-                            <a href="blog.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">
+                            <div class="tags">
+                                <?php foreach (json_decode($row['tags']) as $tag): ?>
+                                    <span class="badge bg-info text-dark"><?php echo $tag; ?></span>
+                                <?php endforeach; ?>
+                            </div>
+                            <a href="blog.php?id=<?php echo $row['id']; ?>" class="btn btn-primary mt-2">
                                 <i class="fas fa-book-open"></i> Lire le blog
                             </a>
                             <button class="like-btn btn btn-secondary mt-2" data-id="<?php echo $row['id']; ?>">
